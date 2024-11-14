@@ -11,13 +11,13 @@ const Header = () => {
 
     </>
 
-    const [theme, setTheme] = useState('dim');
+    const [theme, setTheme] = useState('light');
 
     const handleToggleChange = e =>{
         if(e.target.checked){
-            setTheme('light')
-        }else{
             setTheme('dim')
+        }else{
+            setTheme('light')
         }
     }
 
