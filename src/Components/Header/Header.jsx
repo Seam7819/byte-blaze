@@ -5,18 +5,19 @@ const Header = () => {
 
     const link = <>
     <li><NavLink to='/'>Home</NavLink></li>
-    <li><NavLink to='/blog'>Blogs</NavLink></li>
-    <li><NavLink to='/bookmark'>Bookmarks</NavLink></li>
+    <li><NavLink to='/blogs'>Blogs</NavLink></li>
+    <li><NavLink to='/bookmarks'>Bookmarks</NavLink></li>
+    <li><NavLink to='/feature'>Feature</NavLink></li>
 
     </>
 
-    const [theme, setTheme] = useState('light');
+    const [theme, setTheme] = useState('dim');
 
     const handleToggleChange = e =>{
         if(e.target.checked){
-            setTheme('dim')
-        }else{
             setTheme('light')
+        }else{
+            setTheme('dim')
         }
     }
 
